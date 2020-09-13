@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_12_205945) do
+ActiveRecord::Schema.define(version: 2020_09_12_231418) do
 
   create_table "doctors", force: :cascade do |t|
     t.string "doctor_number"
@@ -19,6 +19,9 @@ ActiveRecord::Schema.define(version: 2020_09_12_205945) do
     t.string "companions"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "catchphrase"
+    t.string "popular_quotes"
+    t.string "screwdriver"
   end
 
 end

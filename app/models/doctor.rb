@@ -1,2 +1,5 @@
 class Doctor < ApplicationRecord
-end
+    serialize :companions, JSON
+    serialize :popular_quotes, JSON
+    serialize :catchphrases, JSON
+end 
